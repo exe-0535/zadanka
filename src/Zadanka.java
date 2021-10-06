@@ -50,6 +50,29 @@ public class Zadanka {
 
         // Zad 4
 
+        System.out.println("Podaj liczbę do znalezienia dzielników: "); int nextNum = skaner.nextInt();
+
+        if(nextNum <= 0) System.out.println("Błędna liczba");
+        else {
+            for(int i = 1; i <= nextNum; i++) {
+                if(nextNum % i == 0) System.out.println("Następnym dzielnikiem liczby " + nextNum + " jest " + i);
+            }
+        }
+
+        // Zad 5
+
+        int max = Integer.MIN_VALUE;
+        int number = -1;
+
+        while(number != 0) {
+            System.out.println("Wprowadź number: "); number = skaner.nextInt();
+            if(number > max && (number % 2 == 1)) max = number;
+        }
+
+        System.out.println("Największą liczbą nieparzystą jest " + max);
+
+        // Zad 6
+
 
     }
 
