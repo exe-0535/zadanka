@@ -73,7 +73,25 @@ public class Zadanka {
 
         // Zad 6
 
+        System.out.println("Podaj dlugosc prostokąta: "); int length = skaner.nextInt();
+        System.out.println("Podaj szerokosc prostokąta: "); int width = skaner.nextInt();
 
+        for(int i = 0; i < length; i++) {
+            for(int j = 1; j < width; j++) {
+                System.out.print("*");
+            }
+            System.out.println("*");
+        }
+
+        // Zad 7
+
+        System.out.println("Podaj wysokosc trojkata: "); int height = skaner.nextInt();
+
+        for(int i = 0; i < height; i++) {
+            for(int j = 0; j < i; j++) {
+                System.out.print("*");
+            }
+            System.out.println("*");
+        }
     }
-
 }
